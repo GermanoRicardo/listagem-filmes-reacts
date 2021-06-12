@@ -1,0 +1,86 @@
+.main_container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page_title {
+  text-align: center;
+}
+
+.movie_container {
+  background: #eee;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.movie_container:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.movie_cover {
+  width: 200px;
+  height: 200px;
+}
+
+.movie_info {
+  padding: 20px;
+}
+
+.movie_title {
+  font-size: 24px;
+}
+
+.movie_overview {
+  font-size: 16px;
+}
+
+.details_container {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.details_movie_cover {
+  width: 50%;
+  object-fit: cover;
+}
+
+.details_genres {
+  display: flex;
+
+  align-items: center;
+}
+
+.details_genres p + p {
+  margin-left: 10px;
+}
+
+.details_release_date {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .details_container {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .details_movie_cover {
+    margin-bottom: 40px;
+  }
+
+  .details_movie_cover {
+    width: 75%;
+    object-fit: cover;
+  }
+  
+  .movie_info {
+    padding: 0 60px;
+  }
+}
